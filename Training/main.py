@@ -1,26 +1,26 @@
-def calculate_love_score(boy_name,girl_name):
-    word1="true"
-    word2="love"
-    combined_name=boy_name+girl_name
-    
-    t=combined_name.count("t")
-    r=combined_name.count("r")
-    u=combined_name.count("u")
-    e=combined_name.count("e")
-    true=t+r+u+e
-    
-    l=combined_name.count("l")
-    o=combined_name.count("o")
-    v=combined_name.count("v")
-    e=combined_name.count("e")
-    love=l+o+v+e
-    
-    print(true+love)
-    
-calculate_love_score("sivakaran","swetha")
+student_scores = {
+    'Harry': 88,
+    'Ron': 78,
+    'Hermione': 95,
+    'Draco': 75,
+    'Neville': 60
+}
+grades=["a",'b','c','d',['e','f']]
+student_grades ={}
+
+for i in student_scores:
+    if 90 < student_scores[i] <= 100:
+        student_grades[i]="Outstanding"
+    elif 80 < student_scores[i] <= 90:
+        student_grades[i]="Exceeds"
+    elif 70 < student_scores[i] <= 80:
+        student_grades[i]="Acceptable"
+    else:
+        student_grades[i]="Fail"
         
-    
+something={
+    "none":grades,
+    "grade":{"names":['siva','Mano','sasi']}
+}
 
-
-    
-    
+print(something["grade"]["names"][1])
