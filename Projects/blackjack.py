@@ -15,9 +15,9 @@ computers_total_bet=[] # for updating the bet amount the computer won
 
 
 
-user_choice=int(input("Enter the bet Amount:\n")) #for getting the user bet amount
+user_choice=int(input("Enter the bet Amount: $")) #for getting the user bet amount
 computer_current_bet=computer_bet() # for starting the computer bet function to get the computer generated bet amount
-print(computer_current_bet)
+print(f"The computer bets : ${computer_current_bet}")
 
 
 
@@ -25,15 +25,8 @@ choice=input("Do you wanna start the game? 'Y' or 'N' :\n").upper()
 if choice=="Y":
     current_total_bet=(f"Total Bet amount: {user_choice+int(computer_current_bet)}")
     print(current_total_bet)
-    game_over=False
-    cards=[11,2,3,4,5,6,7,8,9,10,10,10,10]
-    while game_over==False:
-        user_card=random.choice[cards]
-        print(user_card)
-
-
 elif choice=="N":
-    print("The game is terminated :X")
+    print("The game is terminated :X\n The bet amount cant be returned.")
 
 
 
